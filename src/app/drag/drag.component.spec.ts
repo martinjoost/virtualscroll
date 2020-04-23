@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VirtualComponent } from './virtual.component';
+import { DragComponent } from './drag.component';
 
-describe('VirtualComponent', () => {
-  let component: VirtualComponent;
-  let fixture: ComponentFixture<VirtualComponent>;
+describe('DragComponent', () => {
+  let component: DragComponent;
+  let fixture: ComponentFixture<DragComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VirtualComponent ]
+      declarations: [ DragComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VirtualComponent);
+    fixture = TestBed.createComponent(DragComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
