@@ -2,23 +2,18 @@
 <hr>
 <div class="row">
     <div class="col">
-        <button class="btn btn-primary" (click)="goFinal()">Ir al final</button>
+        <button class="btn btn-secondary" (click)="goInit()">Go Init</button>
     </div>
-
     <div class="col">
-        <button class="btn btn-warning" (click)="goMiddle()">Ir al mitad</button>
+        <button class="btn btn-warning" (click)="goMiddle()">Go Middle</button>
     </div>
-
-    <div class="col text-right">
-        <button class="btn btn-secondary" (click)="goInit()">Ir al Inicio</button>
+    <div class="col">
+        <button class="btn btn-primary" (click)="goFinal()">Go Final</button>
     </div>
 </div>
 <br>
 <cdk-virtual-scroll-viewport itemSize="50" class="list-container list-group">
-
-    <div    class="list-group-item"
-            *cdkVirtualFor="let persona of persons; let i = index; let count = count">
+    <div class="list-group-item" *cdkVirtualFor="let persona of persons; let i = index; let count = count">
         Item {{ i }} / {{ count }}
     </div>
-
 </cdk-virtual-scroll-viewport>
