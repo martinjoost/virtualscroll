@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VirtualComponent implements OnInit {
 
+  personas = Array(500).fill(0);
+
+
   constructor() { }
 
   ngOnInit() {
