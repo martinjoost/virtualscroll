@@ -9,20 +9,20 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { VirtualComponent } from './virtual/virtual.component';
 import { DragComponent } from './drag/drag.component';
-import { PaisesComponent } from './paises/paises.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     VirtualComponent,
-    DragComponent,
-    PaisesComponent
+    DragComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     ScrollingModule,
-    DragDropModule
+    DragDropModule,
+    AppRoutingModule
     ],
   providers: [],
   bootstrap: [AppComponent]
